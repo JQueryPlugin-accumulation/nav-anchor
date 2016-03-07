@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slider</title>
+        <script src='jquery-1.11.1.min.js'></script>
+        <script src='jquery.nav-anchor.js'></script>
+        <style>
+        body {
+            margin: 0;
+            margin: 0;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .scrollto {
+            height: 700px;
+        }
+        .nav {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        .nav a {
+            display: inline-block;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            color: #666;
+            font-size: 22px;
+        }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $('body').navAnchor();
+            })
+            
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        	<div class="nav">
+                <a href="#top1">top1</a><a href="#top2">top1</a><a href="#top3">top3</a><a href="#top4">top4</a>
+            </div>
+            <div id="top1" class="scrollto" style="background-color: #efefef"></div>
+            <div id="top2" class="scrollto #top2" style="background-color: #38c579"></div>
+            <div id="top3" class="scrollto #top3" style="background-color: red"></div>
+            <div id="top4" class="scrollto #top4" style="background-color: blue"></div>
+        </div>
+    </body>
+</html>
